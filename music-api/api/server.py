@@ -110,3 +110,4 @@ async def download_music(background_tasks: BackgroundTasks, request: DownloadReq
         # Captura cualquier otro error inesperado -> Error 500
         logging.error(f"❌ Error crítico en el endpoint /download: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Ocurrió un error interno en el servidor.")
+# Trigger Vercel redeploy
